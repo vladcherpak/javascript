@@ -212,11 +212,160 @@
 // }
 
 
-for (let i = 1; i <= 100; i += 1) {
-       console.log(i);
-       if (i === 50){
-        console.log('знайшли число 50, перериваємо виконання циклу' )
+// for (let i = 1; i <= 100; i += 1) {
+//        console.log(i);
+//        if (i === 50){
+//         console.log('знайшли число 50, перериваємо виконання циклу' )
         
-       break;
+//        break;
+// }
+// }
+
+// МАСИВИ 
+// const arr = ["Taras", "Anton", "Maks"]
+// console.log(arr);
+// arr[1] = "Olga";
+// const lastIndex = arr.length - 1;
+// console.log(lastIndex);
+// //console.log(arr);
+
+
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+    
+// }
+
+// for (const  i of arr) {
+//     console.log(i);
+// }
+
+
+//
+
+
+// let a = 5
+// let b = a
+// console.log(a);
+// console.log(b);
+
+// a = 10
+// console.log(a);
+// console.log(b);
+
+// let a = ["mango"]
+// let b = a
+
+// console.log(a);
+// console.log(b);
+
+// a.push("Banana")
+
+// console.log(a);
+// console.log(b);
+
+//Методи
+//split перетворює рядок в масив розбиваючи його роздільником
+//const fruit = "Mango"
+//console.log(fruit.split(""));
+// const massage = "Js - це цікаво"
+// console.log(massage.split(""));
+//join обєднує елементи масиву в рядок
+//const massage = ["js","це цікаво"]
+// includes(value) - перевіряє чи містить масив елемент зі значенням value
+// console.log(message.includes("це"))
+
+//push()-додає 1 або дек. елементів в кінеть масиву 
+//pop()- видаляє 1 або дек. елементів в кінець масиву
+// const numbers = [];
+// console.log(numbers);
+// numbers.push(1)
+// console.log(numbers);
+// numbers.push("push")
+// console.log(numbers);
+// numbers.push(3,4)
+// console.log(numbers);
+// numbers.pop()
+// console.log(numbers);
+// numbers.pop()
+// console.log(numbers);
+
+
+//slice(begin,end)-
+
+const clients = ["Taras", "Anton", "Maks", "Olga"]
+
+console.log(clients.slice(1,4))
+
+const newClients = clients.slice(1,4)
+console.log(clients);
+console.log(newClients);
+
+//splice(position, num)
+
+const scores = [1, 2, 3, 4, 5]
+const deletedScores =scores.splice(0,3)
+console.log(scores);
+console.log(deletedScores);
+
+const colors = ["red", "green"]
+colors.splice(2, 0, "yellow")
+console.log(colors);
+
+//concat
+
+const oldArr = [1,2,3]
+const newArr = [4,5,6]
+const arr = oldArr.concat(newArr)
+console.log(arr);
+
+// function
+
+// function name(params) {
+//     тіло функції
+// }
+
+// function sayHello() {
+//     console.log("hello World");
+// }
+
+// sayHello();    //виклик функції
+
+// function calc (x, y, i) {
+//     console.log('Результат множення x y i = ${x*y*i}');
+// }
+
+
+// function newCalc (x,y,i){
+//     console.log('Код до ретьорн виконається звичним чином');
+//     return x * y * i
+//     console.log('Цей лог ніколи не викогається');
+// }
+
+// let result = newCalc(32, 33, 10);
+// console.log(result);
+
+//Object
+
+// const book = {
+//     title:'Oblivion',
+//     author:'Bernard',
+//     pages:5000,
+//     stats: {
+//         rating: 9.9,
+//         popular:2.2
+//     }
+// }
+
+// console.log(book.title);
+// console.log(book.stats);
+// console.log(book.arr);
+
+function age (x) {
+if (x < 18) {
+    console.log("Ви неповнолітній")
+} else {
+    console.log("Ви повнолітній");
 }
 }
+
+age(17);
