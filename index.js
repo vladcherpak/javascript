@@ -108,12 +108,10 @@
 // тіло
 // }
 
-
 //const isAge = 10
 //if(isAge == 10) {
 //   console.log('age = 10');
 //}
-
 
 //const isAge = 10
 //if(isAge == 10) {
@@ -129,7 +127,7 @@
 //    console.log('age = ${isAge}');
 //}
 
- //Вираз якщо умова правдива: вираз якщо умова хибна
+//Вираз якщо умова правдива: вираз якщо умова хибна
 //isAge === 10 ? console.log('age = 10') : console.log('age = ${isAge}');
 
 // switch (значення) {
@@ -145,7 +143,7 @@
 //         break;
 // }
 
-// let cost 
+// let cost
 // const subsciption = 'premium'
 
 // switch (subsciption) {
@@ -161,7 +159,7 @@
 //         cost = 500
 //         break;
 
-//     default: 
+//     default:
 //     console.log(' Не вірний тип підписки! ')
 //         break;
 // }
@@ -201,7 +199,7 @@
 // } while (couter < 10);
 
 // for (ініціалізація; умова; крок) {
-//     тіло циклу 
+//     тіло циклу
 // }
 
 // for (let i = 0; i <= 20; i += 5) {
@@ -211,17 +209,16 @@
 //         break;
 // }
 
-
 // for (let i = 1; i <= 100; i += 1) {
 //        console.log(i);
 //        if (i === 50){
 //         console.log('знайшли число 50, перериваємо виконання циклу' )
-        
+
 //        break;
 // }
 // }
 
-// МАСИВИ 
+// МАСИВИ
 // const arr = ["Taras", "Anton", "Maks"]
 // console.log(arr);
 // arr[1] = "Olga";
@@ -229,19 +226,16 @@
 // console.log(lastIndex);
 // //console.log(arr);
 
-
 // for (let i = 0; i < arr.length; i++) {
 //     console.log(arr[i]);
-    
+
 // }
 
 // for (const  i of arr) {
 //     console.log(i);
 // }
 
-
 //
-
 
 // let a = 5
 // let b = a
@@ -274,7 +268,7 @@
 // includes(value) - перевіряє чи містить масив елемент зі значенням value
 // console.log(message.includes("це"))
 
-//push()-додає 1 або дек. елементів в кінеть масиву 
+//push()-додає 1 або дек. елементів в кінеть масиву
 //pop()- видаляє 1 або дек. елементів в кінець масиву
 // const numbers = [];
 // console.log(numbers);
@@ -289,34 +283,33 @@
 // numbers.pop()
 // console.log(numbers);
 
-
 //slice(begin,end)-
 
-const clients = ["Taras", "Anton", "Maks", "Olga"]
+// const clients = ["Taras", "Anton", "Maks", "Olga"]
 
-console.log(clients.slice(1,4))
+// console.log(clients.slice(1,4))
 
-const newClients = clients.slice(1,4)
-console.log(clients);
-console.log(newClients);
+// const newClients = clients.slice(1,4)
+// console.log(clients);
+// console.log(newClients);
 
-//splice(position, num)
+// //splice(position, num)
 
-const scores = [1, 2, 3, 4, 5]
-const deletedScores =scores.splice(0,3)
-console.log(scores);
-console.log(deletedScores);
+// const scores = [1, 2, 3, 4, 5]
+// const deletedScores =scores.splice(0,3)
+// console.log(scores);
+// console.log(deletedScores);
 
-const colors = ["red", "green"]
-colors.splice(2, 0, "yellow")
-console.log(colors);
+// const colors = ["red", "green"]
+// colors.splice(2, 0, "yellow")
+// console.log(colors);
 
-//concat
+// //concat
 
-const oldArr = [1,2,3]
-const newArr = [4,5,6]
-const arr = oldArr.concat(newArr)
-console.log(arr);
+// const oldArr = [1,2,3]
+// const newArr = [4,5,6]
+// const arr = oldArr.concat(newArr)
+// console.log(arr);
 
 // function
 
@@ -333,7 +326,6 @@ console.log(arr);
 // function calc (x, y, i) {
 //     console.log('Результат множення x y i = ${x*y*i}');
 // }
-
 
 // function newCalc (x,y,i){
 //     console.log('Код до ретьорн виконається звичним чином');
@@ -360,12 +352,37 @@ console.log(arr);
 // console.log(book.stats);
 // console.log(book.arr);
 
-function age (x) {
-if (x < 18) {
-    console.log("Ви неповнолітній")
-} else {
-    console.log("Ви повнолітній");
-}
-}
+//ПРАКТИКА
 
-age(17);
+// function age (x) {
+// if (x < 18) {
+//     console.log("Ви неповнолітній")
+// } else {
+//     console.log("Ви повнолітній");
+// }
+// }
+
+// age(17);
+
+// const car = 'yellow'
+
+//   if (car === 'yellow') {
+//     console.log('yellow')
+//   } else {
+//     console.log('Автомобіль іншого кольору');
+//   }
+
+// let couter = 1000
+
+//  while (couter > 0) {
+//     console.log( couter)
+//      couter -= 100;
+//  }
+
+// for (let i = 0; i <= 3500; i += 200) {
+//         console.log(i);
+//         if (i === 2000) {
+//              console.log('знайшли число 2000, перериваємо виконання циклу' )
+//              break;
+//   }
+// }
