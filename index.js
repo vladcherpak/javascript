@@ -257,6 +257,53 @@
 // console.log(a);
 // console.log(b);
 
+
+// const cars = [
+//     {
+//         name: "audi",
+//         color: "red",
+//         year: 2020,
+//     },
+//     {
+//         name: "BMW",
+//         color: "yellow",
+//         year: 2000,
+//     },
+//     {
+//         name: "Renault",
+//         color: "black",
+//         year: 2022,
+//     },
+// ]
+
+// const cars2 = [
+//     {
+//         name: "audi",
+//         color: "red",
+//         year: 2020,
+//     },
+//     {
+//         name: "BMW",
+//         color: "yellow",
+//         year: 2000,
+//     },
+//     {
+//         name: "Renault",
+//         color: "black",
+//         year: 2022,
+//     },
+// ]
+// const combine = [...cars, ...cars2];
+// const dubleCars = [
+//     ...cars,
+//     {
+//         name: "Seat",
+//         color: "white",
+//         year: 2020,
+//     },
+// ]
+// console.log(combine);
+
 //Методи
 //split перетворює рядок в масив розбиваючи його роздільником
 //const fruit = "Mango"
@@ -312,16 +359,17 @@
 // console.log(arr);
 
 // function
+// Expretion Decloration Arrow function
 
 // function name(params) {
 //     тіло функції
 // }
 
-// function sayHello() {
+// function sayHello(параметри) {
 //     console.log("hello World");
 // }
 
-// sayHello();    //виклик функції
+// sayHello(аргументи);    //виклик функції
 
 // function calc (x, y, i) {
 //     console.log('Результат множення x y i = ${x*y*i}');
@@ -351,6 +399,19 @@
 // console.log(book.title);
 // console.log(book.stats);
 // console.log(book.arr);
+
+//Дестктуризація обєктів
+
+// const obj = {
+//     id: 1,
+//     user: "roman",
+//     location: {
+//         name: "jam"
+//     }
+// };
+
+// const{id,user, location: {name}} =obj
+// console.log(id, user, name);
 
 //ПРАКТИКА
 
@@ -386,3 +447,37 @@
 //              break;
 //   }
 // }
+
+
+const audi = {
+    name: "audi",
+    color: "black",
+    year: 2020,
+}
+const toyota = {
+    name: "Toyota",
+    color: "White",
+    year: 2021,
+}
+const nissan = {
+    name: "Nissan",
+    color: "blue",
+    year: 2022,
+}
+
+const favouriteCars = [
+    audi, toyota, nissan
+]
+console.log(favouriteCars);
+
+const doblefavouriteCars = [
+    ...favouriteCars, ...favouriteCars
+]
+
+console.log(doblefavouriteCars);
+let sum = 0
+for (let i = 0; i < doblefavouriteCars.length; i++) {
+    const element = doblefavouriteCars[i];
+  sum =  sum + element.year 
+   console.log(sum)
+}
