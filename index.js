@@ -305,18 +305,18 @@
 // console.log(combine);
 
 //Методи
-//split перетворює рядок в масив розбиваючи його роздільником
+//      split перетворює рядок в масив розбиваючи його роздільником
 //const fruit = "Mango"
 //console.log(fruit.split(""));
 // const massage = "Js - це цікаво"
 // console.log(massage.split(""));
-//join обєднує елементи масиву в рядок
+//      join обєднує елементи масиву в рядок
 //const massage = ["js","це цікаво"]
-// includes(value) - перевіряє чи містить масив елемент зі значенням value
+//      includes(value) - перевіряє чи містить масив елемент зі значенням value
 // console.log(message.includes("це"))
 
-//push()-додає 1 або дек. елементів в кінеть масиву
-//pop()- видаляє 1 або дек. елементів в кінець масиву
+//       push()-додає 1 або дек. елементів в кінеть масиву
+//      pop()- видаляє 1 або дек. елементів в кінець масиву
 // const numbers = [];
 // console.log(numbers);
 // numbers.push(1)
@@ -330,7 +330,7 @@
 // numbers.pop()
 // console.log(numbers);
 
-//slice(begin,end)-
+//      slice(begin,end)-
 
 // const clients = ["Taras", "Anton", "Maks", "Olga"]
 
@@ -340,7 +340,7 @@
 // console.log(clients);
 // console.log(newClients);
 
-// //splice(position, num)
+// //       splice(position, num)
 
 // const scores = [1, 2, 3, 4, 5]
 // const deletedScores =scores.splice(0,3)
@@ -449,35 +449,67 @@
 // }
 
 
-const audi = {
-    name: "audi",
-    color: "black",
-    year: 2020,
-}
-const toyota = {
-    name: "Toyota",
-    color: "White",
-    year: 2021,
-}
-const nissan = {
-    name: "Nissan",
-    color: "blue",
-    year: 2022,
+// const audi = {
+//     name: "audi",
+//     color: "black",
+//     year: 2020,
+// }
+// const toyota = {
+//     name: "Toyota",
+//     color: "White",
+//     year: 2021,
+// }
+// const nissan = {
+//     name: "Nissan",
+//     color: "blue",
+//     year: 2022,
+// }
+
+// const favouriteCars = [
+//     audi, toyota, nissan
+// ]
+// console.log(favouriteCars);
+
+// const doblefavouriteCars = [
+//     ...favouriteCars, ...favouriteCars
+// ]
+
+// console.log(doblefavouriteCars);
+// let sum = 0
+// for (let i = 0; i < doblefavouriteCars.length; i++) {
+//     const element = doblefavouriteCars[i];
+//   sum =  sum + element.year 
+//    console.log(sum)
+// }
+
+
+function foo(name) {
+    console.log( `Ласкаво просимо ${name}`);
 }
 
-const favouriteCars = [
-    audi, toyota, nissan
-]
-console.log(favouriteCars);
+//Функція зворотнього виклику (callback) --- це функція,
+// яка передається іншій як аргумент,
+// а та в свою чергу, викликає передану функцію.
 
-const doblefavouriteCars = [
-    ...favouriteCars, ...favouriteCars
-]
+// console.log(foo("Ivan"));
 
-console.log(doblefavouriteCars);
-let sum = 0
-for (let i = 0; i < doblefavouriteCars.length; i++) {
-    const element = doblefavouriteCars[i];
-  sum =  sum + element.year 
-   console.log(sum)
+// console.log(foo);
+
+function hightFoo(name, callback) {
+    console.log(`Реєструємо гостя ${name}`);
+    callback(name);
 }
+hightFoo("Ivan", foo);
+
+// Функція вищого порядку (highter order function) --- функція, 
+//яка приймає у якості параметрів інші функції або повертає функцію
+// у якості результату.
+
+hightFoo("Bernard", function notifi(name){
+    console.log(`Шановний ${name}, Ваш номер буде готовий за 30 хв! `);
+});
+
+// Якщо колбек функція --- маленька, і потрібна для передачі 
+// аргументом, її можна оголосити безпосередньо на момент 
+// виклику функції, в яку передаємо колбек. Така функція буде 
+// доступна тільки у якості параметра і більше ніде в коді.
