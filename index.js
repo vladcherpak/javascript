@@ -483,9 +483,9 @@
 // }
 
 
-function foo(name) {
-    console.log( `Ласкаво просимо ${name}`);
-}
+// function foo(name) {
+//     console.log( `Ласкаво просимо ${name}`);
+// }
 
 //Функція зворотнього виклику (callback) --- це функція,
 // яка передається іншій як аргумент,
@@ -495,21 +495,118 @@ function foo(name) {
 
 // console.log(foo);
 
-function hightFoo(name, callback) {
-    console.log(`Реєструємо гостя ${name}`);
-    callback(name);
-}
-hightFoo("Ivan", foo);
+// function hightFoo(name, callback) {
+//     console.log(`Реєструємо гостя ${name}`);
+//     callback(name);
+// }
+// hightFoo("Ivan", foo);
 
 // Функція вищого порядку (highter order function) --- функція, 
 //яка приймає у якості параметрів інші функції або повертає функцію
 // у якості результату.
 
-hightFoo("Bernard", function notifi(name){
-    console.log(`Шановний ${name}, Ваш номер буде готовий за 30 хв! `);
-});
+// hightFoo("Bernard", function notifi(name){
+//     console.log(`Шановний ${name}, Ваш номер буде готовий за 30 хв! `);
+// });
 
 // Якщо колбек функція --- маленька, і потрібна для передачі 
 // аргументом, її можна оголосити безпосередньо на момент 
 // виклику функції, в яку передаємо колбек. Така функція буде 
 // доступна тільки у якості параметра і більше ніде в коді.
+
+// const cars = [
+//     {
+//         name: "audi",
+//         color: "red",
+//         year: 2020,
+//     },
+//     {
+//         name: "BMW",
+//         color: "yellow",
+//         year: 2000,
+//     },
+//     {
+//         name: "Renault",
+//         color: "black",
+//         year: 2022,
+//     },
+// ];
+
+// cars.forEach(element => {
+//     //тіло функції
+// });
+
+// cars.forEach(function callback (element, index) {
+//     //тіло функції
+// });
+
+const number = [2, 3, 4, 5, 6, 7]
+
+// for (let i = 0; i < number.length; i++) {
+//     console.log(`Індекс ${i}, значення ${number[i]}`);
+    
+// }
+
+// number.forEach(function (number, index) {
+//     console.log(`forEach Індекс ${index}, значення ${number} `);
+// });
+
+// forEach - поелементно перебирає масив,
+// виклика колбек-функцію для кожного елементу масиву
+// нічого не повертає
+
+// const names = [
+//     "Ivan",
+//     "Vlad",
+//     "Misha"
+// ]
+
+// names.forEach (function (i){
+// console.log(`Привіт мене звати ${i}`);
+// });
+
+//function classic  () {
+//     return a * b * c;
+// }
+
+// const arrow = (a, b, c) => {
+//     return a * b * c;
+// };
+
+// const add = (a) => {
+//     return a + 5;
+// };
+
+// const logMassage = (item, index) => {
+//      console.log(`forEach Індекс ${index}, значення ${number} `);
+// };
+
+// number.forEach(logMassage);
+
+// const multiply  = (array, value) => {
+//     for (let i = 0; i < array.length; i++) {
+//         array[i] = array[i] * value
+        
+//     }
+// };
+
+// const number = [2, 3, 4, 5, 6, 7];
+// console.log(number);
+// multiply(number, 2);
+// console.log(number);
+
+//Array.method((item, index, arr) => {
+// логіка яку ми будемо виконувати
+//});
+
+//Array.map((item) => {});
+// поелементно перебирає орігінільний масив
+// не змінює орігінальний масив
+// результата записується в новий масив
+// повертає новий масив однакової довжини
+
+const planets = ["Земля", "Марс", "Меркурій"]
+
+const planetsUpp = planets.map((item)  => item.toUpperCase());
+console.log(planetsUpp);
+console.log(planets);
