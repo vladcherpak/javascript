@@ -540,7 +540,7 @@
 //     //тіло функції
 // });
 
-const number = [2, 3, 4, 5, 6, 7]
+// const number = [2, 3, 4, 5, 6, 7]
 
 // for (let i = 0; i < number.length; i++) {
 //     console.log(`Індекс ${i}, значення ${number[i]}`);
@@ -554,6 +554,8 @@ const number = [2, 3, 4, 5, 6, 7]
 // forEach - поелементно перебирає масив,
 // виклика колбек-функцію для кожного елементу масиву
 // нічого не повертає
+//map 
+//filter
 
 // const names = [
 //     "Ivan",
@@ -567,15 +569,19 @@ const number = [2, 3, 4, 5, 6, 7]
 
 //function classic  () {
 //     return a * b * c;
-// }
+// }  
+
+//      decloration
 
 // const arrow = (a, b, c) => {
-//     return a * b * c;
-// };
+//      return a * b * c;
+// };   
+//         expretion 
 
 // const add = (a) => {
 //     return a + 5;
 // };
+//      arrow
 
 // const logMassage = (item, index) => {
 //      console.log(`forEach Індекс ${index}, значення ${number} `);
@@ -605,8 +611,51 @@ const number = [2, 3, 4, 5, 6, 7]
 // результата записується в новий масив
 // повертає новий масив однакової довжини
 
-const planets = ["Земля", "Марс", "Меркурій"]
+// const planets = ["Земля", "Марс", "Меркурій"]
 
-const planetsUpp = planets.map((item)  => item.toUpperCase());
-console.log(planetsUpp);
-console.log(planets);
+// const planetsUpp = planets.map((item)  => item.toUpperCase());
+// console.log(planetsUpp);
+// console.log(planets);
+
+// function ageName(age, name) {
+//     console.log(name+age);
+// }
+
+// ageName(3,4);
+
+// function plus(x, y) {
+//     console.log(x+y);
+// }
+
+// plus(3,4);
+
+
+// function minus(x, y) {
+//     console.log(x-y);
+// }
+
+// minus(3,4);
+
+// function mult(x, y) {
+//     console.log(x*y);
+// }
+
+// mult(3,4);
+
+// function division(x, y) {
+//     console.log(x/y);
+// }
+
+// division(3,4);
+
+// const students = [
+//     { name: "Taras", age: 14, height: 1.5 },
+//     { name: "Jack", age: 13, height: 1.32 },
+//     { name: "Olga", age: 12, height: 1.42 },
+//     { name: "Ivan", age: 11, height: 1.21 },
+//   ];
+//   students.forEach(function calc({name, age, height}) {
+//     const changeHeight = height*100;
+//     console.log(`мене звати ${name} мені  ${age} років маю висоту  ${changeHeight} см`);
+//   })
+
