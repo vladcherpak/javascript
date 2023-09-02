@@ -257,7 +257,6 @@
 // console.log(a);
 // console.log(b);
 
-
 // const cars = [
 //     {
 //         name: "audi",
@@ -448,7 +447,6 @@
 //   }
 // }
 
-
 // const audi = {
 //     name: "audi",
 //     color: "black",
@@ -478,10 +476,9 @@
 // let sum = 0
 // for (let i = 0; i < doblefavouriteCars.length; i++) {
 //     const element = doblefavouriteCars[i];
-//   sum =  sum + element.year 
+//   sum =  sum + element.year
 //    console.log(sum)
 // }
-
 
 // function foo(name) {
 //     console.log( `Ласкаво просимо ${name}`);
@@ -501,7 +498,7 @@
 // }
 // hightFoo("Ivan", foo);
 
-// Функція вищого порядку (highter order function) --- функція, 
+// Функція вищого порядку (highter order function) --- функція,
 //яка приймає у якості параметрів інші функції або повертає функцію
 // у якості результату.
 
@@ -509,9 +506,9 @@
 //     console.log(`Шановний ${name}, Ваш номер буде готовий за 30 хв! `);
 // });
 
-// Якщо колбек функція --- маленька, і потрібна для передачі 
-// аргументом, її можна оголосити безпосередньо на момент 
-// виклику функції, в яку передаємо колбек. Така функція буде 
+// Якщо колбек функція --- маленька, і потрібна для передачі
+// аргументом, її можна оголосити безпосередньо на момент
+// виклику функції, в яку передаємо колбек. Така функція буде
 // доступна тільки у якості параметра і більше ніде в коді.
 
 // const cars = [
@@ -544,7 +541,7 @@
 
 // for (let i = 0; i < number.length; i++) {
 //     console.log(`Індекс ${i}, значення ${number[i]}`);
-    
+
 // }
 
 // number.forEach(function (number, index) {
@@ -554,7 +551,7 @@
 // forEach - поелементно перебирає масив,
 // виклика колбек-функцію для кожного елементу масиву
 // нічого не повертає
-//map 
+//map
 //filter
 
 // const names = [
@@ -569,14 +566,14 @@
 
 //function classic  () {
 //     return a * b * c;
-// }  
+// }
 
 //      decloration
 
 // const arrow = (a, b, c) => {
 //      return a * b * c;
-// };   
-//         expretion 
+// };
+//         expretion
 
 // const add = (a) => {
 //     return a + 5;
@@ -592,7 +589,7 @@
 // const multiply  = (array, value) => {
 //     for (let i = 0; i < array.length; i++) {
 //         array[i] = array[i] * value
-        
+
 //     }
 // };
 
@@ -629,7 +626,6 @@
 
 // plus(3,4);
 
-
 // function minus(x, y) {
 //     console.log(x-y);
 // }
@@ -658,4 +654,28 @@
 //     const changeHeight = height*100;
 //     console.log(`мене звати ${name} мені  ${age} років маю висоту  ${changeHeight} см`);
 //   })
+
+const fish = [
+  { id: 1, name: "fugu", weight: 1 },
+  { id: 2, name: "karp", weight: 5 },
+  { id: 3, name: "pike", weight: 3 },
+];
+
+const newFish = fish.map((item) => {
+    const gram = item.weight * 1000
+   return {
+    ...item, 
+    weight: gram,
+   };
+   });
+   console.log(newFish);
+
+fish.forEach((item) => {
+    console.log(`я сьогодні їздив на рибалку, і зловив рибу ${item.id}, вагою ${item.weight}`);
+});
+
+newFish.forEach((item) => {
+    console.log(`я сьогодні їздив на рибалку, і зловив рибу ${item.id}, вагою ${item.weight}`);
+});
+
 
